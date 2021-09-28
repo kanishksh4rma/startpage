@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Steins;Gate</title>
+    <link rel="icon" href="./ASSETS/iconmonstr-rocket-13.svg" />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,45 +24,68 @@
         />
         <div class="written-content">
           <h1>Welcome</h1>
-          <div class="date"><h3>sep. 07 2021 | 34:34:#4</h3></div>
+          <div id="date"><h3>sep. 07 2021 | 34:34:#4</h3></div>
           <div class="search">
-            <h3>> Search with duckduckgo...</h3>
+            <form
+              action="https://google.com/search"
+              method="get"
+              autocomplete="off"
+            >
+              <label for="duck-search">> </label>
+              <input
+                autofocus
+                type="search"
+                name="q"
+                id="duck-search"
+                placeholder="Search with Google..."
+              />
+            </form>
           </div>
           <div class="links">
-            <div class="links-heading">
-              <h2>Web Dev</h2>
-              <h2>Chill</h2>
-              <h2>Social</h2>
-              <h2>Others</h2>
-            </div>
             <div class="links-subhead">
               <ul>
                 <ul>
-                  <li>github</li>
-                  <li>undraw</li>
-                  <li>github</li>
-                  <li>undraw</li>
+                  <li>
+                    <h2 id="web-dev-heading">Web Dev</h2>
+                  </li>
+                  <li>
+                    <a href="https://github.com/kanishksh4rma">github</a>
+                  </li>
+                  <li><a href="https://undraw.co/search">undraw</a></li>
+                  <li>
+                    <a href="https://www.softr.io/tools/svg-shape-generator"
+                      >svg shape</a
+                    >
+                  </li>
+                  <li><a href="https://fonts.google.com/">Google fonts</a></li>
                 </ul>
 
                 <ul>
-                  <li>github</li>
-                  <li>undraw</li>
-                  <li>github</li>
-                  <li>undraw</li>
+                  <li>
+                    <h2>Chill</h2>
+                  </li>
+                  <li><a href="https://open.spotify.com/">spotify</a></li>
+                  <li><a href="https://www.youtube.com/">youtube</a></li>
+                  <li><a href="https://in.pinterest.com/">pinterest</a></li>
                 </ul>
 
                 <ul>
-                  <li>github</li>
-                  <li>undraw</li>
-                  <li>github</li>
-                  <li>undraw</li>
+                  <li><h2>Social</h2></li>
+                  <li><a href="https://www.instagram.com/">instagram</a></li>
+                  <li><a href="https://www.facebook.com/">facebook</a></li>
+                  <li><a href="https://twitter.com/">twitter</a></li>
+                  <li><a href="https://www.reddit.com/">reddit</a></li>
                 </ul>
 
                 <ul>
-                  <li>github</li>
-                  <li>undraw</li>
-                  <li>github</li>
-                  <li>undraw</li>
+                  <li>
+                    <h2>Others</h2>
+                  </li>
+                  <li>
+                    <a href="https://www.youtube.com/c/DevEd/videos">dev ed</a>
+                  </li>
+                  <li><a href="https://www.awwwards.com/">awwwards</a></li>
+                  <li><a href="https://iconmonstr.com/">iconmonstr</a></li>
                 </ul>
               </ul>
             </div>
@@ -70,4 +94,5 @@
       </div>
     </div>
   </body>
+  <script src="./date.js"></script>
 </html>

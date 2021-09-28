@@ -19,66 +19,97 @@
   width: 90%;
   display: flex;
   flex-direction: row;
+  box-shadow: 6px 6px 100px #1b1b1bcb;
+
 }
 .main-content img {
   height: 420px;
   width: auto;
+  border-radius: 10px 0px 0px 10px;
 }
 .main-content .written-content {
   width: 100%;
   margin-left: 96px;
   margin-top: 75px;
   color: #ffffff;
+  
 }
 .main-content .written-content h1 {
   font-family: "Lobster", cursive;
   font-size: 48px;
   color: #e15959;
-  padding-right: 10px;
+  transform: translateX(-1%);
   position: relative;
-  
 }
 .main-content .written-content h2 {
   font-family: "Lobster", cursive;
   font-size: 36px;
 }
-.main-content .written-content h3 {
+#duck-search {
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
   font-weight: 400;
+  background-color: transparent;
+  border: none;
+  width: 270px;
+  margin-left: 2px;
 }
-.date{
-    font-size: 14px;
-    color: #FDF541E0;
+#duck-search:focus{
+  border: none;
+  outline: none;
+  cursor: text;
+  color: #ffffff;
+  font-weight: 400;
 }
-.search{
-  margin-top: 30px;
+#date {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fdf541e0;
+}
+.search {
+  margin-top: 25px;
 }
 
-.links .links-heading{
-    margin-top: 20px;
-    padding-right: 10px;
-    display: flex;
-    flex-direction: row;
+.links .links-subhead {
+  margin-top: 14px;
 }
-.links .links-heading h2{
-    margin-right: 34px;
-    font-weight: 400;
+.links .links-subhead h2 {
+  margin-right: 34px;
+  font-weight: 400;
+  margin-bottom: 2px;
 }
 
-.links-subhead ul{
-    display: flex;
-    flex-direction: row;
+.links-subhead ul {
+  display: flex;
+  flex-direction: row;
 }
-.links-subhead ul ul{
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    font-size: 16px;
-    font-family: "Quicksand", sans-serif;
+.links-subhead ul ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
+  list-style: none;
+  font-size: 16px;
+  font-family: "Quicksand", sans-serif;
 }
-.links-subhead ul ul:first-child{
+.links-subhead ul ul li {
+  margin-left: 4px;
+}
+.links-subhead ul ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.links-subhead ul ul li a:hover {
+  cursor: pointer;
+  color: #e15959;
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+#web-dev-heading {
+  transform: translateX(-4%);
+}
+/* .links-subhead ul ul:first-child{
     margin-right: 108px;
     margin-left: 8px;
 }
@@ -87,4 +118,4 @@
 }
 .links-subhead ul ul:nth-child(3){
     margin-right: 78px;
-}
+} */
