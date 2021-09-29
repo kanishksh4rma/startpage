@@ -102,8 +102,11 @@
 .links-subhead ul ul li a:hover {
   cursor: pointer;
   color: #e15959;
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 20px;
   margin-bottom: 4%;
+  /* z-index: 5; */
+  transition: 0.1s ease-in;
 }
 #web-dev-heading {
   transform: translateX(-4%);
